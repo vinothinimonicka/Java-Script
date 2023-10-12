@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>Array in Javascript</h1>
+    <p>
+        JavaScript Array is a single  variable that is used to store elements of different data types.
+        JavaScript Array are zero-indexed.The JavaScript array are not associative in nature.
+        Arrays are uesed when we have a list of items. An array allows you to store several values with the 
+        same name and access them by using their index number.
+    </p>
+    <script>
+        /*let courses =["HTML","CSS","Javascript","React"];
+         console.log(courses)
+        courses.length=5
+        document.write('Array after increased length:',courses,'<br>')
+        courses.length=2
+        document.write('Array after decreased length:',courses,'<br>')
+        var arr1=new Array(3)
+        arr1[0]=10
+        arr1[1]=20
+        arr1[2]=30
+        document.write(arr1,'<br>')
+        var arr2=new Array(5)
+        document.write('Array is:,arr2')
+        console.log('Value is:',arr2)*/
+
+        /*let courses = ["HTML","CSS","Javascript","React"];
+        document.write(courses,'<br>')
+        courses.push('React')
+        document.write('After Adding an Element:',courses,'<br>')
+        document.write(typeof(courses),'<br>')
+        document.write("Using Array.isArray() method:",Array.isArray(courses),'<br>')
+        document.write("Using instanceof method:",courses instanceof Array)*/
+
+        var ar=Array.from('Javascript')
+        //from - The string will get  converted to an array
+        document.write('The Resultant is:',ar,'<br>')
+        document.write(ar[1],'<br>')
+        var set=new Set(['C','C++','Java','Python']) //A set of different valus
+        document.write(Array.from(set),'<br>')
+        var res=ar.includes('AngularJs')
+        document.write(res)
+        //join - It joins the elements of an array as a string
+        var arr=["AngularJs","Node.js","JQuery",'Javascript','Java','Nxtjs']
+        var result=arr.join('-')
+        document.write(result,'<br>');
+        document.write(arr.pop(),'<br>')
+        document.write(arr.length)
+        document.write(arr.sort(),'<br>')
+        document.write(arr.reverse(),'<br>')
+        document.write(arr.slice(1,5),'<br>')
+        res=arr.findIndex('AngularJs')
+        document.write(res,'<br>')
+        var result=arr.lastIndexOf('Nxtjs')
+        document.write(result)
+    </script>
+</body>
+</html>
